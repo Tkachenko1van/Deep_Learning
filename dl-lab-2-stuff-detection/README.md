@@ -2,12 +2,10 @@
 
 ## Содержимое репозитория
 
-| Ноутбук | Описание |
-|---------|----------|
-| `test-yolo11m-lab2-detection.ipynb` | Обучение YOLO11m |
-| `test-yolov9c-lab2-detection.ipynb` | Обучение YOLOv9c |
-| `test-rtdetr-l-lab2-detection.ipynb` | Обучение RT-DETR-L |
-| `main-yolo11m-lab2-detection.ipynb` | Инференс YOLO11m + SAHI → submission |
+- `test-yolo11m-lab2-detection.ipynb` - Обучение YOLO11m
+- `test-yolov9c-lab2-detection.ipynb` - Обучение YOLOv9c
+- `test-rtdetr-l-lab2-detection.ipynb` - Обучение RT-DETR-L
+- `main-yolo11m-lab2-detection.ipynb` - Инференс YOLO11m + SAHI → submission
 
 ## Данные
 
@@ -151,16 +149,16 @@ Split идентичен YOLO-экспериментам. **Тайлинг не 
 ### Пример разнообразия ошибок
 
 Сотрудник частично закрыт стеллажом:  
-YOLO11m: "Вижу торс → 70% staff" (локальные фичи)  
-YOLOv9c: "Вижу бейдж → 90% staff" (PGI сохранил мелкие детали)  
-RT-DETR-L: "Он за прилавком → 85% staff" (глобальный контекст)  
-Ансамбль: "Все трое согласны → 95%" ✅  
+- YOLO11m: "Вижу торс → 70% staff" (локальные фичи)  
+- YOLOv9c: "Вижу бейдж → 90% staff" (PGI сохранил мелкие детали)  
+- RT-DETR-L: "Он за прилавком → 85% staff" (глобальный контекст)  
+- Ансамбль: "Все трое согласны → 95%" ✅  
   
 Покупатель в похожей одежде:  
-YOLO11m: "Похож на staff → 60% staff" ❌  
-YOLOv9c: "Нет бейджа → 30% staff" ✅  
-RT-DETR-L: "Стоит у полки → 25% staff" ✅  
-Ансамбль: "Двое против → отклоняем" ✅  
+- YOLO11m: "Похож на staff → 60% staff" ❌
+- YOLOv9c: "Нет бейджа → 30% staff" ✅  
+- RT-DETR-L: "Стоит у полки → 25% staff" ✅  
+- Ансамбль: "Двое против → отклоняем" ✅  
   
 ### Метод объединения: Weighted Boxes Fusion (WBF)
 
